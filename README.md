@@ -100,6 +100,10 @@ Open new terminal and follow this command
 watch -n 1 "pstree -p | grep output"
 ```
 
+![Screenshot 2025-01-27 002944](https://github.com/user-attachments/assets/3edfbd01-9e0b-4452-be76-a1b729e28bdd)
+![Screenshot 2025-01-27 003001](https://github.com/user-attachments/assets/eb1be658-a8eb-43e7-8fab-c64d43790a36)
+
+
 7. main
 The main loop of the shell:
 
