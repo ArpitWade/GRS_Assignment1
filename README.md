@@ -95,8 +95,12 @@ Handles built-in commands like cd, exit, help, and tree.
 
 5. process_tree
 Executes the pstree command to display the process tree.
+Open new terminal and follow this command
+```bash
+watch -n 1 "pstree -p | grep output"
+```
 
-6. main
+7. main
 The main loop of the shell:
 
 Prompts the user for input.
