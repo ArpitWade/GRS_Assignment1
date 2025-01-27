@@ -1,15 +1,16 @@
 # Custom Shell Implementation
 
-This project is a basic implementation of a custom shell in C. The shell allows users to execute built-in commands, run external programs, and utilize input/output redirection. It also includes support for running a custom program called `fact`.
+This project is a basic implementation of a custom shell in C. 
+It also supports the `fact` program implementation.
 
 ## Features
 - **Built-in Commands**:
   - `cd <directory>`: Change the current working directory.
-  - `exit`: Exit the shell.
-  - `help`: Display usage instructions for the shell.
+  - `exit`: Exit shell.
+  - `help`: guiding basic instruction of shell.
   - `tree`: Display the process tree.
 - **External Command Execution**:
-  - Execute external commands such as `ls`, `pwd`, and custom programs like `fact`.
+  - Execute external commands such as `ls`, `pwd` ,etc..
 - **I/O Redirection**:
   - Redirect input using `< input_file`.
   - Redirect output using `> output_file`.
@@ -17,7 +18,6 @@ This project is a basic implementation of a custom shell in C. The shell allows 
   - A custom program (`fact`) can be executed to calculate the factorial of a given number.
 
 ---
-
 ## File Descriptions
 - **`shell.c`**: Contains the implementation of the custom shell.
 - **`fact.c`**: A program that calculates the factorial of a number.
@@ -82,16 +82,16 @@ $ fact 10
 
 ## Code Explanation
 1. input_parser
-Parses the user's input into arguments for command execution.
+Parses the users input into arguments for command execution.
 
 2. IO_redirection
 Handles input and output redirection by manipulating file descriptors using dup2().
 
 3. exec_command
-Executes external commands or the fact program using fork() and execvp().
+Executes external commands.
 
 4. builtin_handler
-Handles built-in commands like cd, exit, help, and tree.
+Handles built-in commands like cd, exit, help.
 
 5. process_tree
 Executes the pstree command to display the process tree.
